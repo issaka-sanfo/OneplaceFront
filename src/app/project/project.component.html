@@ -1,0 +1,10 @@
+<h1>List des projets</h1>
+<table *ngIf="projects">
+    <tr>
+        <th>Nom</th><th>Url</th>
+    </tr>
+    <tr *ngFor="let project of projects._embedded.projects">
+        <td>{{project.name}}</td>
+        <td>{{project.url}}</td>
+    </tr>
+</table>

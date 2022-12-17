@@ -1,0 +1,11 @@
+<h1>List des Technologies</h1>
+<table *ngIf="technos">
+    <tr>
+        <th>Backend</th><th>Frontend</th><th>SGBD</th>
+    </tr>
+    <tr *ngFor="let techno of technos._embedded.technoStacks">
+        <td>{{techno.back}}</td>
+        <td>{{techno.front}}</td>
+        <td>{{techno.sgbd}}</td>
+    </tr>
+</table>
